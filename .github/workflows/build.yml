@@ -19,8 +19,8 @@ jobs:
       - uses: actions/checkout@v4
       
       - shell: cmd
-        run: | 
-          curl https://web.archive.org/web/20070225091733/http://bray.velenje.cx:80/avr/terminal/Terminal.exe -L -J
+        run: |
+          curl "https://web.archive.org/web/20070225091733/http://bray.velenje.cx:80/avr/terminal/Terminal.exe" --output Terminal.exe -L
           
       - name: Archive Release
         uses: thedoctor0/zip-release@master
