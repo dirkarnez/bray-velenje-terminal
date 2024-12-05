@@ -20,7 +20,7 @@ jobs:
       
       - shell: cmd
         run: | 
-          curl https://web.archive.org/web/20070225091733/http://bray.velenje.cx:80/avr/terminal/Terminal.exe
+          curl https://web.archive.org/web/20070225091733/http://bray.velenje.cx:80/avr/terminal/Terminal.exe -L -J
           
       - name: Archive Release
         uses: thedoctor0/zip-release@master
